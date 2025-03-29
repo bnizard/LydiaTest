@@ -11,6 +11,7 @@ class ContactsViewController: UIViewController {
     
     private let tableview = UITableView()
     private let viewModel = ContactsViewModel()
+    private let activityIndicator = UIActivityIndicatorView(style: .large)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +25,31 @@ class ContactsViewController: UIViewController {
     private func setupUI() {
         title = "Contacts"
         view.addSubview(tableview)
+
+        // Setup TableView
         tableview.frame = view.bounds
         tableview.dataSource = self
         tableview.delegate = self
         tableview.register(ContactTableViewCell.self, forCellReuseIdentifier: "ContactCell")
+
+        // Setup Activity Indicator
+        view.addSubview(activityIndicator)
+        activityIndicator.center = view.center
     }
 
     private func setupBindings() {
         viewModel.onUpdate =  { [weak self] in
             self?.tableview.reloadData()
+        }
+
+        viewModel.isLoading = { [weak self] isLoading in
+            DispatchQueue.main.async {
+                if isLoading {
+                    self?.activityIndicator.startAnimating()
+                } else {
+                    self?.activityIndicator.stopAnimating()
+                }
+            }
         }
     }
 
