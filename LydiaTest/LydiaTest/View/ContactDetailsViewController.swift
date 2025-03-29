@@ -34,7 +34,7 @@ class ContactDetailsViewController: UIViewController {
 
         // Profile Image
         imageView.contentMode = .scaleAspectFit
-        imageView.layer.cornerRadius = 50
+        imageView.layer.cornerRadius = 64
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -46,6 +46,7 @@ class ContactDetailsViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "DetailsCell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.allowsSelection = false
 
         // Add views to Main view
         view.addSubview(imageView)
@@ -54,8 +55,8 @@ class ContactDetailsViewController: UIViewController {
         NSLayoutConstraint.activate([
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            imageView.widthAnchor.constraint(equalToConstant: 100),
-            imageView.heightAnchor.constraint(equalToConstant: 100),
+            imageView.widthAnchor.constraint(equalToConstant: 128),
+            imageView.heightAnchor.constraint(equalToConstant: 128),
 
             tableView.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
