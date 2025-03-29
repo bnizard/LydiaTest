@@ -16,14 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
 
+        print("🚀 AppDelegate didFinishLaunchingWithOptions called")
+
         window = UIWindow(frame: UIScreen.main.bounds)
+        print("🖥️ Window created: \(String(describing: window))")
 
         let contactsVC = ContactsViewController()
+
+        print("📱 ContactsViewController created: \(contactsVC)")
 
         let navigationController = UINavigationController(rootViewController: contactsVC)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        
+
+        print("✅ Window is now visible")
         return true
     }
 }

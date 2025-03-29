@@ -7,75 +7,75 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		F03B88402D9858A4007BDF7A /* PBXContainerItemProxy */ = {
+		F03B88032D985774007BDF7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F03B88212D9858A3007BDF7A /* Project object */;
+			containerPortal = F03B87E42D985773007BDF7A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F03B88282D9858A3007BDF7A;
-			remoteInfo = LydiaTest;
+			remoteGlobalIDString = F03B87EB2D985773007BDF7A;
+			remoteInfo = LydiaTestdd;
 		};
-		F03B884A2D9858A4007BDF7A /* PBXContainerItemProxy */ = {
+		F03B880D2D985774007BDF7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F03B88212D9858A3007BDF7A /* Project object */;
+			containerPortal = F03B87E42D985773007BDF7A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F03B88282D9858A3007BDF7A;
-			remoteInfo = LydiaTest;
+			remoteGlobalIDString = F03B87EB2D985773007BDF7A;
+			remoteInfo = LydiaTestdd;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F03B88292D9858A3007BDF7A /* LydiaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LydiaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F03B883F2D9858A4007BDF7A /* LydiaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LydiaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F03B88492D9858A4007BDF7A /* LydiaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LydiaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03B87EC2D985773007BDF7A /* LydiaTestdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LydiaTestdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03B88022D985774007BDF7A /* LydiaTestddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LydiaTestddTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03B880C2D985774007BDF7A /* LydiaTestddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LydiaTestddUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F03B88512D9858A4007BDF7A /* Exceptions for "LydiaTest" folder in "LydiaTest" target */ = {
+		F03B88142D985774007BDF7A /* Exceptions for "LydiaTestdd" folder in "LydiaTestdd" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = F03B88282D9858A3007BDF7A /* LydiaTest */;
+			target = F03B87EB2D985773007BDF7A /* LydiaTestdd */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F03B882B2D9858A3007BDF7A /* LydiaTest */ = {
+		F03B87EE2D985773007BDF7A /* LydiaTestdd */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				F03B88512D9858A4007BDF7A /* Exceptions for "LydiaTest" folder in "LydiaTest" target */,
+				F03B88142D985774007BDF7A /* Exceptions for "LydiaTestdd" folder in "LydiaTestdd" target */,
 			);
-			path = LydiaTest;
+			path = LydiaTestdd;
 			sourceTree = "<group>";
 		};
-		F03B88422D9858A4007BDF7A /* LydiaTestTests */ = {
+		F03B88052D985774007BDF7A /* LydiaTestddTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LydiaTestTests;
+			path = LydiaTestddTests;
 			sourceTree = "<group>";
 		};
-		F03B884C2D9858A4007BDF7A /* LydiaTestUITests */ = {
+		F03B880F2D985774007BDF7A /* LydiaTestddUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LydiaTestUITests;
+			path = LydiaTestddUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F03B88262D9858A3007BDF7A /* Frameworks */ = {
+		F03B87E92D985773007BDF7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F03B883C2D9858A4007BDF7A /* Frameworks */ = {
+		F03B87FF2D985774007BDF7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F03B88462D9858A4007BDF7A /* Frameworks */ = {
+		F03B88092D985774007BDF7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,22 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F03B88202D9858A3007BDF7A = {
+		F03B87E32D985773007BDF7A = {
 			isa = PBXGroup;
 			children = (
-				F03B882B2D9858A3007BDF7A /* LydiaTest */,
-				F03B88422D9858A4007BDF7A /* LydiaTestTests */,
-				F03B884C2D9858A4007BDF7A /* LydiaTestUITests */,
-				F03B882A2D9858A3007BDF7A /* Products */,
+				F03B87EE2D985773007BDF7A /* LydiaTestdd */,
+				F03B88052D985774007BDF7A /* LydiaTestddTests */,
+				F03B880F2D985774007BDF7A /* LydiaTestddUITests */,
+				F03B87ED2D985773007BDF7A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F03B882A2D9858A3007BDF7A /* Products */ = {
+		F03B87ED2D985773007BDF7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F03B88292D9858A3007BDF7A /* LydiaTest.app */,
-				F03B883F2D9858A4007BDF7A /* LydiaTestTests.xctest */,
-				F03B88492D9858A4007BDF7A /* LydiaTestUITests.xctest */,
+				F03B87EC2D985773007BDF7A /* LydiaTestdd.app */,
+				F03B88022D985774007BDF7A /* LydiaTestddTests.xctest */,
+				F03B880C2D985774007BDF7A /* LydiaTestddUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,134 +108,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F03B88282D9858A3007BDF7A /* LydiaTest */ = {
+		F03B87EB2D985773007BDF7A /* LydiaTestdd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F03B88522D9858A4007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTest" */;
+			buildConfigurationList = F03B88152D985774007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestdd" */;
 			buildPhases = (
-				F03B88252D9858A3007BDF7A /* Sources */,
-				F03B88262D9858A3007BDF7A /* Frameworks */,
-				F03B88272D9858A3007BDF7A /* Resources */,
+				F03B87E82D985773007BDF7A /* Sources */,
+				F03B87E92D985773007BDF7A /* Frameworks */,
+				F03B87EA2D985773007BDF7A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F03B882B2D9858A3007BDF7A /* LydiaTest */,
+				F03B87EE2D985773007BDF7A /* LydiaTestdd */,
 			);
-			name = LydiaTest;
+			name = LydiaTestdd;
 			packageProductDependencies = (
 			);
-			productName = LydiaTest;
-			productReference = F03B88292D9858A3007BDF7A /* LydiaTest.app */;
+			productName = LydiaTestdd;
+			productReference = F03B87EC2D985773007BDF7A /* LydiaTestdd.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F03B883E2D9858A4007BDF7A /* LydiaTestTests */ = {
+		F03B88012D985774007BDF7A /* LydiaTestddTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F03B88572D9858A4007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestTests" */;
+			buildConfigurationList = F03B881A2D985774007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestddTests" */;
 			buildPhases = (
-				F03B883B2D9858A4007BDF7A /* Sources */,
-				F03B883C2D9858A4007BDF7A /* Frameworks */,
-				F03B883D2D9858A4007BDF7A /* Resources */,
+				F03B87FE2D985774007BDF7A /* Sources */,
+				F03B87FF2D985774007BDF7A /* Frameworks */,
+				F03B88002D985774007BDF7A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F03B88412D9858A4007BDF7A /* PBXTargetDependency */,
+				F03B88042D985774007BDF7A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				F03B88422D9858A4007BDF7A /* LydiaTestTests */,
+				F03B88052D985774007BDF7A /* LydiaTestddTests */,
 			);
-			name = LydiaTestTests;
+			name = LydiaTestddTests;
 			packageProductDependencies = (
 			);
-			productName = LydiaTestTests;
-			productReference = F03B883F2D9858A4007BDF7A /* LydiaTestTests.xctest */;
+			productName = LydiaTestddTests;
+			productReference = F03B88022D985774007BDF7A /* LydiaTestddTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F03B88482D9858A4007BDF7A /* LydiaTestUITests */ = {
+		F03B880B2D985774007BDF7A /* LydiaTestddUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F03B885A2D9858A4007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestUITests" */;
+			buildConfigurationList = F03B881D2D985774007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestddUITests" */;
 			buildPhases = (
-				F03B88452D9858A4007BDF7A /* Sources */,
-				F03B88462D9858A4007BDF7A /* Frameworks */,
-				F03B88472D9858A4007BDF7A /* Resources */,
+				F03B88082D985774007BDF7A /* Sources */,
+				F03B88092D985774007BDF7A /* Frameworks */,
+				F03B880A2D985774007BDF7A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F03B884B2D9858A4007BDF7A /* PBXTargetDependency */,
+				F03B880E2D985774007BDF7A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				F03B884C2D9858A4007BDF7A /* LydiaTestUITests */,
+				F03B880F2D985774007BDF7A /* LydiaTestddUITests */,
 			);
-			name = LydiaTestUITests;
+			name = LydiaTestddUITests;
 			packageProductDependencies = (
 			);
-			productName = LydiaTestUITests;
-			productReference = F03B88492D9858A4007BDF7A /* LydiaTestUITests.xctest */;
+			productName = LydiaTestddUITests;
+			productReference = F03B880C2D985774007BDF7A /* LydiaTestddUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F03B88212D9858A3007BDF7A /* Project object */ = {
+		F03B87E42D985773007BDF7A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					F03B88282D9858A3007BDF7A = {
+					F03B87EB2D985773007BDF7A = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					F03B883E2D9858A4007BDF7A = {
+					F03B88012D985774007BDF7A = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = F03B88282D9858A3007BDF7A;
+						TestTargetID = F03B87EB2D985773007BDF7A;
 					};
-					F03B88482D9858A4007BDF7A = {
+					F03B880B2D985774007BDF7A = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = F03B88282D9858A3007BDF7A;
+						TestTargetID = F03B87EB2D985773007BDF7A;
 					};
 				};
 			};
-			buildConfigurationList = F03B88242D9858A3007BDF7A /* Build configuration list for PBXProject "LydiaTest" */;
+			buildConfigurationList = F03B87E72D985773007BDF7A /* Build configuration list for PBXProject "LydiaTestdd" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = F03B88202D9858A3007BDF7A;
+			mainGroup = F03B87E32D985773007BDF7A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F03B882A2D9858A3007BDF7A /* Products */;
+			productRefGroup = F03B87ED2D985773007BDF7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F03B88282D9858A3007BDF7A /* LydiaTest */,
-				F03B883E2D9858A4007BDF7A /* LydiaTestTests */,
-				F03B88482D9858A4007BDF7A /* LydiaTestUITests */,
+				F03B87EB2D985773007BDF7A /* LydiaTestdd */,
+				F03B88012D985774007BDF7A /* LydiaTestddTests */,
+				F03B880B2D985774007BDF7A /* LydiaTestddUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F03B88272D9858A3007BDF7A /* Resources */ = {
+		F03B87EA2D985773007BDF7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F03B883D2D9858A4007BDF7A /* Resources */ = {
+		F03B88002D985774007BDF7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F03B88472D9858A4007BDF7A /* Resources */ = {
+		F03B880A2D985774007BDF7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F03B88252D9858A3007BDF7A /* Sources */ = {
+		F03B87E82D985773007BDF7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F03B883B2D9858A4007BDF7A /* Sources */ = {
+		F03B87FE2D985774007BDF7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F03B88452D9858A4007BDF7A /* Sources */ = {
+		F03B88082D985774007BDF7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +269,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F03B88412D9858A4007BDF7A /* PBXTargetDependency */ = {
+		F03B88042D985774007BDF7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F03B88282D9858A3007BDF7A /* LydiaTest */;
-			targetProxy = F03B88402D9858A4007BDF7A /* PBXContainerItemProxy */;
+			target = F03B87EB2D985773007BDF7A /* LydiaTestdd */;
+			targetProxy = F03B88032D985774007BDF7A /* PBXContainerItemProxy */;
 		};
-		F03B884B2D9858A4007BDF7A /* PBXTargetDependency */ = {
+		F03B880E2D985774007BDF7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F03B88282D9858A3007BDF7A /* LydiaTest */;
-			targetProxy = F03B884A2D9858A4007BDF7A /* PBXContainerItemProxy */;
+			target = F03B87EB2D985773007BDF7A /* LydiaTestdd */;
+			targetProxy = F03B880D2D985774007BDF7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F03B88532D9858A4007BDF7A /* Debug */ = {
+		F03B88162D985774007BDF7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y4DQ3K7CLR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LydiaTest/Info.plist;
+				INFOPLIST_FILE = LydiaTestdd/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -301,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTest;
+				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		F03B88542D9858A4007BDF7A /* Release */ = {
+		F03B88172D985774007BDF7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,7 +318,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y4DQ3K7CLR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LydiaTest/Info.plist;
+				INFOPLIST_FILE = LydiaTestdd/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -328,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTest;
+				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,7 +336,7 @@
 			};
 			name = Release;
 		};
-		F03B88552D9858A4007BDF7A /* Debug */ = {
+		F03B88182D985774007BDF7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,7 +399,7 @@
 			};
 			name = Debug;
 		};
-		F03B88562D9858A4007BDF7A /* Release */ = {
+		F03B88192D985774007BDF7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -455,7 +455,7 @@
 			};
 			name = Release;
 		};
-		F03B88582D9858A4007BDF7A /* Debug */ = {
+		F03B881B2D985774007BDF7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -465,16 +465,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestddTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LydiaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LydiaTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LydiaTestdd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LydiaTestdd";
 			};
 			name = Debug;
 		};
-		F03B88592D9858A4007BDF7A /* Release */ = {
+		F03B881C2D985774007BDF7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,16 +484,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestddTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LydiaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LydiaTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LydiaTestdd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LydiaTestdd";
 			};
 			name = Release;
 		};
-		F03B885B2D9858A4007BDF7A /* Debug */ = {
+		F03B881E2D985774007BDF7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -501,16 +501,16 @@
 				DEVELOPMENT_TEAM = Y4DQ3K7CLR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestddUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LydiaTest;
+				TEST_TARGET_NAME = LydiaTestdd;
 			};
 			name = Debug;
 		};
-		F03B885C2D9858A4007BDF7A /* Release */ = {
+		F03B881F2D985774007BDF7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -518,55 +518,55 @@
 				DEVELOPMENT_TEAM = Y4DQ3K7CLR;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestddUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LydiaTest;
+				TEST_TARGET_NAME = LydiaTestdd;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F03B88242D9858A3007BDF7A /* Build configuration list for PBXProject "LydiaTest" */ = {
+		F03B87E72D985773007BDF7A /* Build configuration list for PBXProject "LydiaTestdd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F03B88552D9858A4007BDF7A /* Debug */,
-				F03B88562D9858A4007BDF7A /* Release */,
+				F03B88182D985774007BDF7A /* Debug */,
+				F03B88192D985774007BDF7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F03B88522D9858A4007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTest" */ = {
+		F03B88152D985774007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestdd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F03B88532D9858A4007BDF7A /* Debug */,
-				F03B88542D9858A4007BDF7A /* Release */,
+				F03B88162D985774007BDF7A /* Debug */,
+				F03B88172D985774007BDF7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F03B88572D9858A4007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestTests" */ = {
+		F03B881A2D985774007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestddTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F03B88582D9858A4007BDF7A /* Debug */,
-				F03B88592D9858A4007BDF7A /* Release */,
+				F03B881B2D985774007BDF7A /* Debug */,
+				F03B881C2D985774007BDF7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F03B885A2D9858A4007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestUITests" */ = {
+		F03B881D2D985774007BDF7A /* Build configuration list for PBXNativeTarget "LydiaTestddUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F03B885B2D9858A4007BDF7A /* Debug */,
-				F03B885C2D9858A4007BDF7A /* Release */,
+				F03B881E2D985774007BDF7A /* Debug */,
+				F03B881F2D985774007BDF7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F03B88212D9858A3007BDF7A /* Project object */;
+	rootObject = F03B87E42D985773007BDF7A /* Project object */;
 }

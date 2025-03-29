@@ -7,8 +7,9 @@
 
 import Foundation
 
-class ContactViewModel {
+class ContactsViewModel {
     var contacts : [Contact] = []
+    var onUpdate: (() -> Void)?
 
     func fetchContacts() {
         APIService.shared.fetchContact { [weak self] result in
@@ -16,7 +17,8 @@ class ContactViewModel {
                 switch result {
                 case .success(let contacts):
                     self?.contacts.append(contentsOf: contacts)
-
+                    self?.onUpdate?()
+                    
                     CacheManager.shared.saveContacts(contacts)
                 case .failure(let error):
                     print("Error: \(error)")

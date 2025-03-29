@@ -6,7 +6,6 @@
 //
 
 import Testing
-@testable import LydiaTest
 
 struct LydiaTestTests {
 
