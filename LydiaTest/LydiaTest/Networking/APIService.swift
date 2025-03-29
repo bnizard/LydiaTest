@@ -12,7 +12,9 @@ class APIService {
     private let url = "https://randomuser.me/api/?results=10"
 
     func fetchContact(completion: @escaping (Result<[Contact], Error>) -> Void) {
-        guard let requestUrl = URL(string: url) else { return }
+        guard let requestUrl = URL(string: url) else {
+            return
+        }
 
         URLSession.shared.dataTask(with: requestUrl) { data, response, error in
             if let error = error {
@@ -20,7 +22,9 @@ class APIService {
                 return
             }
 
-            guard let data = data else { return }
+            guard let data = data else {
+                return
+            }
 
             do {
                 let decodeResponse = try JSONDecoder().decode(APIResponse.self, from: data)

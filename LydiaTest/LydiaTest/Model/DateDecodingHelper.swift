@@ -26,3 +26,11 @@ extension KeyedDecodingContainer {
         }
     }
 }
+
+// Reusable helper function for encode Date properties
+extension KeyedEncodingContainer {
+    mutating func encodeDate(_ value: Date, forKey key: Key) throws {
+        let dateString = customDateFormatter.string(from: value)
+        try self.encode(dateString, forKey: key)
+    }
+}

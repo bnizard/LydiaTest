@@ -16,6 +16,8 @@ class ContactViewModel {
                 switch result {
                 case .success(let contacts):
                     self?.contacts.append(contentsOf: contacts)
+
+                    CacheManager.shared.saveContacts(contacts)
                 case .failure(let error):
                     print("Error: \(error)")
                 }

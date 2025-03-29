@@ -11,6 +11,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
+    private let viewModel = ContactViewModel()
+
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -25,14 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func testAPICall() {
-        APIService.shared.fetchContact { result in
-
-            switch result {
-                case .success(let contact):
-                print("Contact fetched: \(contact)")
-            case .failure(let error):
-                print("Error fetching contact: \(error)")
-            }
-        }
+        viewModel.fetchContacts()
     }
 }
