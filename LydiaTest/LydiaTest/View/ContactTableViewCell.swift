@@ -14,7 +14,15 @@ class ContactTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         contentView.addSubview(nameLabel)
-        nameLabel.frame = contentView.bounds
+
+        // Disable autoresizing mask to use Auto Layout
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        // Set Auto Layout constraints to center the label
+        NSLayoutConstraint.activate([
+            nameLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            nameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+        ])
     }
 
     required init?(coder: NSCoder) {
