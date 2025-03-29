@@ -13,16 +13,23 @@ class ContactsViewModel {
 
     func fetchContacts() {
         APIService.shared.fetchContact { [weak self] result in
+
+            guard let self = self else { return }
+
             DispatchQueue.main.async {
                 switch result {
                 case .success(let contacts):
-                    self?.contacts.removeAll()
-                    self?.contacts.append(contentsOf: contacts)
-                    self?.onUpdate?()
+                    self.contacts = contacts
+                    self.onUpdate?()
                     
                     CacheManager.shared.saveContacts(contacts)
                 case .failure(let error):
                     print("Error: \(error)")
+
+                    if let cachedContacts = CacheManager.shared.loadContacts(), !cachedContacts.isEmpty {
+                        self.contacts = cachedContacts
+                        self.onUpdate?()
+                    }
                 }
             }
         }

@@ -26,7 +26,6 @@ class CacheManager {
 
         do {
             let contacts = try JSONDecoder().decode([Contact].self, from: data)
-            print("Contacts loaded: \(contacts)")  // Log loaded contacts
             return contacts
         } catch {
             print("Failed to decode contacts: \(error)")  // Log decoding error
