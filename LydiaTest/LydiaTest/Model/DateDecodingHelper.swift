@@ -15,6 +15,13 @@ let customDateFormatter: DateFormatter = {
     return formatter
 }()
 
+let displayDateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium  // Example output: "Mar 29, 2025"
+    formatter.timeStyle = .none
+    return formatter
+}()
+
 // Reusable helper function for decoding Date properties
 extension KeyedDecodingContainer {
     func decodeDate(forKey key: Key) throws -> Date {

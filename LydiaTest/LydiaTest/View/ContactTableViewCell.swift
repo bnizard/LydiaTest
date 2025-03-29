@@ -30,6 +30,6 @@ class ContactTableViewCell: UITableViewCell {
     }
 
     func configure(with contact: Contact) {
-        nameLabel.text = "\(contact.name.first) \(contact.name.last)"
+        nameLabel.text = "\(contact.name.title) \(contact.name.first) \(contact.name.last)"
     }
 }

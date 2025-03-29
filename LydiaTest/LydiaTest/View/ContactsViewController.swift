@@ -63,4 +63,14 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(with: viewModel.contacts[indexPath.row])
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contact = viewModel.contacts[indexPath.row]
+        let detailViewController = ContactDetailsViewController(contact: contact)
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44.0
+    }
 }
