@@ -16,6 +16,7 @@ class ContactsViewModel {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let contacts):
+                    self?.contacts.removeAll()
                     self?.contacts.append(contentsOf: contacts)
                     self?.onUpdate?()
                     

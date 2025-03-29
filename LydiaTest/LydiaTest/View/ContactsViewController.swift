@@ -17,6 +17,7 @@ class ContactsViewController: UIViewController {
 
         setupUI()
         setupBindings()
+        setupNavigationBar()
         viewModel.fetchContacts()
     }
 
@@ -33,6 +34,17 @@ class ContactsViewController: UIViewController {
         viewModel.onUpdate =  { [weak self] in
             self?.tableview.reloadData()
         }
+    }
+
+    // Set up the reload button in the navigation bar
+    private func setupNavigationBar() {
+        let reloadButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(reloadContacts))
+        navigationItem.rightBarButtonItem = reloadButton
+    }
+
+    // Action for the reload button
+    @objc private func reloadContacts() {
+        viewModel.fetchContacts()
     }
 }
 
