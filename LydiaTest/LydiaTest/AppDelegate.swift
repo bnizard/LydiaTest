@@ -18,6 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UIViewController() // Replace with your initial view controller
         window?.makeKeyAndVisible()
+
+        testAPICall()
+
         return true
+    }
+
+    func testAPICall() {
+        APIService.shared.fetchContact { result in
+
+            switch result {
+                case .success(let contact):
+                print("Contact fetched: \(contact)")
+            case .failure(let error):
+                print("Error fetching contact: \(error)")
+            }
+        }
     }
 }

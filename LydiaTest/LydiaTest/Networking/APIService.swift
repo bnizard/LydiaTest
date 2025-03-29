@@ -9,9 +9,9 @@ import Foundation
 
 class APIService {
     static let shared = APIService()
-    private let url = "https://randomsuer.me/api/?results=10"
+    private let url = "https://randomuser.me/api/?results=10"
 
-    func fetchUsers(completion: @escaping (Result<[Contact], Error>) -> Void) {
+    func fetchContact(completion: @escaping (Result<[Contact], Error>) -> Void) {
         guard let requestUrl = URL(string: url) else { return }
 
         URLSession.shared.dataTask(with: requestUrl) { data, response, error in

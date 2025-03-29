@@ -11,7 +11,7 @@ class ContactViewModel {
     var contacts : [Contact] = []
 
     func fetchContacts() {
-        APIService.shared.fetchUsers { [weak self] result in
+        APIService.shared.fetchContact { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let contacts):
