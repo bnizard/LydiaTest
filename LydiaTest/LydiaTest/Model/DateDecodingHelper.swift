@@ -15,6 +15,7 @@ let customDateFormatter: DateFormatter = {
     return formatter
 }()
 
+// Custom DateFormatter to display date for user
 let displayDateFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .medium

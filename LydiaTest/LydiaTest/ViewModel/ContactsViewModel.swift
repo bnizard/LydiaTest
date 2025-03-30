@@ -12,10 +12,16 @@ class ContactsViewModel {
     var isLoading: ((Bool) -> Void)? // Closure to notify loading state changes
     var onUpdate: (() -> Void)?
 
+    private var contactAPIService: APIServiceProtocol
+
+    init(contactAPIService: APIServiceProtocol = APIService.shared) {
+        self.contactAPIService = contactAPIService
+    }
+
     func fetchContacts() {
         isLoading?(true) // Notify UI that loading has started
 
-        APIService.shared.fetchContact { [weak self] result in
+        contactAPIService.fetchContact { [weak self] result in
 
             guard let self = self else { return }
 

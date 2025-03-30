@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F03B88512D9858A4007BDF7A /* Exceptions for "LydiaTest" folder in "LydiaTest" target */ = {
+		F052FE5F2D997B2C00D95710 /* Exceptions for "LydiaTest" folder in "LydiaTest" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +43,7 @@
 		F03B882B2D9858A3007BDF7A /* LydiaTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				F03B88512D9858A4007BDF7A /* Exceptions for "LydiaTest" folder in "LydiaTest" target */,
+				F052FE5F2D997B2C00D95710 /* Exceptions for "LydiaTest" folder in "LydiaTest" target */,
 			);
 			path = LydiaTest;
 			sourceTree = "<group>";

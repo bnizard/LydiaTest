@@ -7,7 +7,7 @@
 
 import Foundation
 
-class APIService {
+class APIService: APIServiceProtocol {
     static let shared = APIService()
     private let url = "https://randomuser.me/api/?results=10"
 
