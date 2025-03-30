@@ -53,11 +53,6 @@
 			path = LydiaTestTests;
 			sourceTree = "<group>";
 		};
-		F03B884C2D9858A4007BDF7A /* LydiaTestUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LydiaTestUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +85,6 @@
 			children = (
 				F03B882B2D9858A3007BDF7A /* LydiaTest */,
 				F03B88422D9858A4007BDF7A /* LydiaTestTests */,
-				F03B884C2D9858A4007BDF7A /* LydiaTestUITests */,
 				F03B882A2D9858A3007BDF7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,9 +160,6 @@
 			dependencies = (
 				F03B884B2D9858A4007BDF7A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F03B884C2D9858A4007BDF7A /* LydiaTestUITests */,
-			);
 			name = LydiaTestUITests;
 			packageProductDependencies = (
 			);
@@ -191,6 +182,7 @@
 					};
 					F03B883E2D9858A4007BDF7A = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = F03B88282D9858A3007BDF7A;
 					};
 					F03B88482D9858A4007BDF7A = {
@@ -459,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y4DQ3K7CLR;
@@ -468,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bastien.LydiaTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LydiaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LydiaTest";
@@ -478,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y4DQ3K7CLR;
