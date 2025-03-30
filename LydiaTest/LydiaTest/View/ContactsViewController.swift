@@ -8,7 +8,7 @@
 import UIKit
 
 class ContactsViewController: UIViewController {
-    
+
     private let tableview = UITableView()
     private let viewModel = ContactsViewModel()
     private let activityIndicator = UIActivityIndicatorView(style: .large)

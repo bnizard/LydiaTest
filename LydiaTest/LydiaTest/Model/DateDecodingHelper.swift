@@ -17,7 +17,7 @@ let customDateFormatter: DateFormatter = {
 
 let displayDateFormatter: DateFormatter = {
     let formatter = DateFormatter()
-    formatter.dateStyle = .medium  // Example output: "Mar 29, 2025"
+    formatter.dateStyle = .medium
     formatter.timeStyle = .none
     return formatter
 }()

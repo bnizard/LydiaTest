@@ -8,7 +8,7 @@
 import Foundation
 
 class ContactsViewModel {
-    var contacts : [Contact] = []
+    var contacts: [Contact] = []
     var isLoading: ((Bool) -> Void)? // Closure to notify loading state changes
     var onUpdate: (() -> Void)?
 
@@ -21,12 +21,12 @@ class ContactsViewModel {
 
             DispatchQueue.main.async {
                 self.isLoading?(false) // Notify UI that loading has ended
-                
+
                 switch result {
                 case .success(let contacts):
                     self.contacts = contacts
                     self.onUpdate?()
-                    
+
                     CacheManager.shared.saveContacts(contacts)
                 case .failure(let error):
                     print("Error: \(error)")

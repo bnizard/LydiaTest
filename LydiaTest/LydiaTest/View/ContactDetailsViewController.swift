@@ -17,7 +17,7 @@ class ContactDetailsViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
 
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -66,7 +66,7 @@ class ContactDetailsViewController: UIViewController {
     }
 
     private func downloadImage(from url: URL) {
-        URLSession.shared.dataTask(with: url) { data, _, error in
+        URLSession.shared.dataTask(with: url) { data, _, _ in
             if let data = data {
                 DispatchQueue.main.async {
                     self.imageView.image = UIImage(data: data)
@@ -91,7 +91,7 @@ extension ContactDetailsViewController: UITableViewDataSource {
 
     private func contactDetails() -> [String] {
 
-        // Format the Date of Birth if available
+        // Format Dates
         let formattedDOB = displayDateFormatter.string(from: contact.dob.date)
         let formattedRegisteredDate = displayDateFormatter.string(from: contact.registered.date)
 
@@ -112,7 +112,7 @@ extension ContactDetailsViewController: UITableViewDataSource {
             "Id: \(contact.id.name), \(contact.id.value ?? "N/A")",
             "Phone: \(contact.phone)",
             "Cell: \(contact.cell)",
-            "Date of Birth: \(formattedDOB)",
+            "Date of Birth: \(formattedDOB)"
         ]
     }
 }

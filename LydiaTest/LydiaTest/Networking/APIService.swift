@@ -16,7 +16,7 @@ class APIService {
             return
         }
 
-        URLSession.shared.dataTask(with: requestUrl) { data, response, error in
+        URLSession.shared.dataTask(with: requestUrl) { data, _, error in
             if let error = error {
                 completion(.failure(error))
                 return

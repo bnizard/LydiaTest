@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: contactsVC)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        
+
         return true
     }
 }
