@@ -73,6 +73,10 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+        guard indexPath.row < viewModel.contacts.count else {
+           return UITableViewCell()
+        }
+
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as? ContactTableViewCell  else {
             return UITableViewCell()
         }
@@ -82,6 +86,11 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        guard indexPath.row < viewModel.contacts.count else {
+            return
+        }
+
         let contact = viewModel.contacts[indexPath.row]
         let detailViewController = ContactDetailsViewController(contact: contact)
         navigationController?.pushViewController(detailViewController, animated: true)

@@ -8,12 +8,12 @@
 import UIKit
 
 class ContactDetailsViewController: UIViewController {
-    private let contact: Contact
+    private let viewModel: ContactDetailsViewModel
     private let imageView = UIImageView()
     private let tableView = UITableView()
 
     init(contact: Contact) {
-        self.contact = contact
+        self.viewModel = ContactDetailsViewModel(contact: contact)
         super.init(nibName: nil, bundle: nil)
 
     }
@@ -29,7 +29,7 @@ class ContactDetailsViewController: UIViewController {
     }
 
     private func setupUI() {
-        title = "\(contact.name.title) \(contact.name.first) \(contact.name.last)"
+        title = "\(viewModel.contact.name.title) \(viewModel.contact.name.first) \(viewModel.contact.name.last)"
         view.backgroundColor = .white
 
         // Profile Image
@@ -38,7 +38,7 @@ class ContactDetailsViewController: UIViewController {
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
 
-        if let url = URL(string: contact.picture.large) {
+        if let url = URL(string: viewModel.contact.picture.large) {
             downloadImage(from: url)
         }
 
@@ -78,41 +78,45 @@ class ContactDetailsViewController: UIViewController {
 
 // Tableview DataSource
 extension ContactDetailsViewController: UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return viewModel.contactDetails().count
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contactDetails().count
+        let contactDetails = viewModel.contactDetails()
+        guard section < contactDetails.count else {
+            return 0
+        }
+
+        return contactDetails[section].details.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let contactDetails = viewModel.contactDetails()
+
+        guard indexPath.section < contactDetails.count else {
+            return UITableViewCell()
+        }
+
+        let sectionDetails = contactDetails[indexPath.section].details
+        guard indexPath.row < sectionDetails.count else {
+            return UITableViewCell()
+        }
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell", for: indexPath)
-        cell.textLabel?.text = contactDetails()[indexPath.row]
+        cell.textLabel?.text = sectionDetails[indexPath.row]
         cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = .byWordWrapping
         return cell
     }
 
-    private func contactDetails() -> [String] {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let contactDetails = viewModel.contactDetails()
+        guard section < contactDetails.count else {
+            return nil
+        }
 
-        // Format Dates
-        let formattedDOB = displayDateFormatter.string(from: contact.dob.date)
-        let formattedRegisteredDate = displayDateFormatter.string(from: contact.registered.date)
-
-        return [
-            "First Name: \(contact.name.first)",
-            "Last Name: \(contact.name.last)",
-            "Nationality: \(contact.nat)",
-            "Gender: \(contact.gender)",
-            "Age: \(contact.dob.age)",
-            "Registered Date: \(formattedRegisteredDate)",
-            "Username: \(contact.login.username)",
-            "Password: \(contact.login.password)",
-            "Address: \(contact.location.street.number) \(contact.location.street.name), \(contact.location.city), \(contact.location.state), \(contact.location.country)",
-            "Postal Code: \(contact.location.postcode)",
-            "Timezone: \(contact.location.timezone.description) \(contact.location.timezone.offset)",
-            "Latitude: \(contact.location.coordinates.latitude)",
-            "Longitude: \(contact.location.coordinates.longitude)",
-            "Id: \(contact.id.name), \(contact.id.value ?? "N/A")",
-            "Phone: \(contact.phone)",
-            "Cell: \(contact.cell)",
-            "Date of Birth: \(formattedDOB)"
-        ]
+        return contactDetails[section].section
     }
 }
