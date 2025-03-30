@@ -35,4 +35,15 @@ struct Location: Codable {
         coordinates = try container.decode(Coordinates.self, forKey: .coordinates)
         timezone = try container.decode(Timezone.self, forKey: .timezone)
     }
+
+    // Init for Unit Test
+    init(street: Street, city: String, state: String, country: String, postcode: String, coordinates: Coordinates, timezone: Timezone) {
+        self.street = street
+        self.city = city
+        self.state = state
+        self.country = country
+        self.postcode = postcode
+        self.coordinates = coordinates
+        self.timezone = timezone
+    }
 }

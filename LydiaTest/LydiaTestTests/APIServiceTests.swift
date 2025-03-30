@@ -1,5 +1,5 @@
 //
-//  ContactsAPIServiceTests.swift
+//  APIServiceTests.swift
 //  LydiaTestTests
 //
 //  Created by Bastien Nizard on 30/03/2025.
@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LydiaTest
 
-class ContactsAPIServiceTests: XCTestCase {
+class APIServiceTests: XCTestCase {
     func testFetchContactsSuccess() {
         let expectation = XCTestExpectation(description: "Fetch contacts success")
 

@@ -22,6 +22,12 @@ struct Registered: Codable {
         self.age = try container.decode(Int.self, forKey: .age)
     }
 
+    // Custom init for Unit Tests
+    init (date: Date, age: Int) {
+        self.date = date
+        self.age = age
+    }
+
     // Custom encode to handle date encoding
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
