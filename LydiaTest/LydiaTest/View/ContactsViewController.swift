@@ -94,6 +94,9 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
         let contact = viewModel.contacts[indexPath.row]
         let detailViewController = ContactDetailsViewController(contact: contact)
         navigationController?.pushViewController(detailViewController, animated: true)
+
+        // Deselect the cell
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
